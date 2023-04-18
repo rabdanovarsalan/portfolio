@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Bootstrap JS-->
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script></head>
+    <!--Animate on Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
+    <!--My Styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Website Name-->
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark" data-bs-theme="dark">
+            <div class="container-sm-fluid container-md">
+                <a class="navbar-brand" href="index.html">
+                    <picture>
+                        <img class="origin img-fluid" src="img/logo.png" alt="Avatar Picture" width="64" height="64" class="d-inline-block align-text-top">
+                    </picture>
+                    <span>Arsalan</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expand="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Item</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Item</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Item</a>
+                        </li>
+                    </ul>
+                </div> <!--End of collapse navbar-collapse-->
+            </div> <!--End of container-->
+        </nav>
+    </header>
+
+    <main>
+        <section class="nice container-fluid py-5 px-4 px-md-5" role="banner">
+            <h1 class="text-center pb-5">Arsalan Rabdanov Portfolio</h1>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-md-between">
+                    <p class="pe-md-4 col-md-4 pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                    
+                    <p class="ps-md-4 text-md-end col-md-4 pt-5">Ut eu pellentesque turpis, quis scelerisque nisl. Donec commodo ut diam vel feugiat. Aliquam erat volutpat. Curabitur euismod, velit tempor pellentesque pulvinar, libero erat finibus ipsum, ut dictum erat est eu velit.</p>
+                </div> 
+            </div>
+        </section>
+        
+        <section class="nice container-fluid bg-primary py-5 px-4 px-md-5" role="banner">
+            <div class="container">
+                <div class="row justify-content-md-between">
+                    <div class="col-md-8 fs-1 text-start pe-md-4" data-aos="fade-right">
+                        <h2>Arsalan Rabdanov Heading 2</h2>                        
+                    </div>
+
+                    <div class="col-md-4 ps-md-4 d-flex flex-column justify-content-md-between pt-5" data-aos="fade-left">
+                        <p>Text</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed euismod sapien. Aenean nec commodo orci.</p>
+                    </div> <!--End of col-->
+                </div> <!--End of row-->               
+            </div> <!--End of container-->
+        </section>
+
+        <section class="list container-sm-fluid container-md bg-dark py-5 px-4 px-md-5 ">
+            <div class="row justify-content-md-around">
+                <h2 class="col-md-7 fs-1 text-center text-md-start align-self-center pe-md-4">
+                    What I <span class="text-primary">do</span>
+                </h2>
+                <div class="col-sm-6 col-md-5 ps-md-4 d-flex flex-column justify-content-md-between py-3">
+                    <div class="accordion" id="stuff_i_do" data-bs-theme="dark">
+                        <div class="accordion-item rounded-0 bg-dark">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed border-0 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    The Stuff!
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#stuff_i_do">
+                                <div class="accordion-body">
+                                    <p>I like to rhyme and commit crime.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!--End of accordion-->
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container-sm-fluid container-md bg-dark py-5 px-4 px-md-5" >
+            <h2 class="display-3 text-primary fw-bold">Projects</h2>
+            <div class="row gap-4">
+                <div class="card col-lg bg-transparent d-md-none">
+                    <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
+                        <h3 class="card-title text-center text-sm-start" itemprop="name">Title</h3>
+                        <p itemprop="abstract" class="card-text">Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                        <picture>
+                            <source srcset="img/ph_background.png,
+                                            img/ph_background.png 2x,
+                                            img/ph_background.png 3x"
+                                    media="(min-width: 0px)"/>
+                            <img itemprop="image" src="img/ph_background.png" class="card-img-bottom" alt="placeholder">
+                        </picture>                    
+                    </div> <!--End of Card Body-->
+                </div> <!--End of Card-->
+                <div class="card col-lg bg-transparent d-md-none">
+                    <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
+                        <h3 class="card-title text-center text-sm-start" itemprop="name">Title</h3>
+                        <p itemprop="abstract" class="card-text">Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                        <picture>
+                            <source srcset="img/ph_background.png,
+                                            img/ph_background.png 2x,
+                                            img/ph_background.png 3x"
+                                    media="(min-width: 0px)"/>
+                            <img itemprop="image" src="img/ph_background.png" class="card-img-bottom" alt="placeholder">
+                        </picture>                    
+                    </div> <!--End of Card Body-->
+                </div> <!--End of Card-->
+                <div class="card col-lg bg-transparent d-md-none">
+                    <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
+                        <h3 class="card-title text-center text-sm-start" itemprop="name">Title</h3>
+                        <p itemprop="abstract" class="card-text">Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                        <picture>
+                            <source srcset="img/ph_background.png,
+                                            img/ph_background.png 2x,
+                                            img/ph_background.png 3x"
+                                    media="(min-width: 0px)"/>
+                            <img itemprop="image" src="img/ph_background.png" class="card-img-bottom" alt="placeholder">
+                        </picture>                    
+                    </div> <!--End of Card Body-->
+                </div> <!--End of Card-->
+
+                <!-- CAROUSEL -->
+                <div id="carouselExample" class="carousel slide d-none d-md-block" >
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-cols-2">
+                                <div class="card col bg-transparent">
+                                    <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h3 class="card-title text-center text-sm-start" itemprop="name">Title</h3>
+                                        <p itemprop="abstract" class="card-text">Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                                        <picture>
+                                            <source srcset="img/ph_background.png,
+                                                            img/ph_background.png 2x,
+                                                            img/ph_background.png 3x"
+                                                    media="(min-width: 0px)"/>
+                                            <img itemprop="image" src="img/ph_background.png" class="card-img-bottom" alt="placeholder">
+                                        </picture>                    
+                                    </div> <!--End of Card Body-->
+                                </div> <!--End of Card-->
+                                <div class="card col bg-transparent">
+                                    <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h3 class="card-title text-center text-sm-start" itemprop="name">Title</h3>
+                                        <p itemprop="abstract" class="card-text">Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                                        <picture>
+                                            <source srcset="img/ph_background.png,
+                                                            img/ph_background.png 2x,
+                                                            img/ph_background.png 3x"
+                                                    media="(min-width: 0px)"/>
+                                            <img itemprop="image" src="img/ph_background.png" class="card-img-bottom" alt="placeholder">
+                                        </picture>                    
+                                    </div> <!--End of Card Body-->
+                                </div> <!--End of Card-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-cols-2">
+                                <div class="card col bg-transparent">
+                                    <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h3 class="card-title text-center text-sm-start" itemprop="name">Title</h3>
+                                        <p itemprop="abstract" class="card-text">Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                                        <picture>
+                                            <source srcset="img/ph_background.png,
+                                                            img/ph_background.png 2x,
+                                                            img/ph_background.png 3x"
+                                                    media="(min-width: 0px)"/>
+                                            <img itemprop="image" src="img/ph_background.png" class="card-img-bottom" alt="placeholder">
+                                        </picture>                    
+                                    </div> <!--End of Card Body-->
+                                </div> <!--End of Card-->
+                                <div class="card col bg-transparent">
+                                    <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h3 class="card-title text-center text-sm-start" itemprop="name">Title</h3>
+                                        <p itemprop="abstract" class="card-text">Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.</p>
+                                        <picture>
+                                            <source srcset="img/ph_background.png,
+                                                            img/ph_background.png 2x,
+                                                            img/ph_background.png 3x"
+                                                    media="(min-width: 0px)"/>
+                                            <img itemprop="image" src="img/ph_background.png" class="card-img-bottom" alt="placeholder">
+                                        </picture>                    
+                                    </div> <!--End of Card Body-->
+                                </div> <!--End of Card-->
+                            </div>
+                        </div>
+                    </div>
+                      
+                    
+                </div> <!-- /.carousel-inner -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div> <!--End of Row-->
+        </section>
+    </main>
+
+    <footer class="container-fluid bg-secondary py-5 px-4 px-md-5">
+        <span class="d-flex justify-content-center">&copy; Copyright 2023.</span>
+    </footer>
+
+    <!-- Initialize AOS-->
+    <script>
+        AOS.init();
+      </script>
+
+    <!-- Schema Information -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Arsalan Rabdanov",
+          "url": "https://whatever.com",
+          "copyrightHolder": {
+            "@type": "Person",
+            "name": "Arsalan Rabdanov"
+          },
+          "copyrightYear": "2023"
+        }
+        </script>
+</body>
+</html>
