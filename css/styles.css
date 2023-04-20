@@ -2,14 +2,15 @@
     --bs-dark-rgb: 33,33,33;
     --bs-primary-rgb: 0,146,102;
     --bs-accordion-btn-focus-border-color: #009166;
-    --color-accordion: #323232;
+    --color-accordion: #222;
     --bs-accordion-active-bg: --bs-primary-bg-subtle !important;
+    --bs-accordion-active: --bs-primary-bg-subtle !important;
 }
 
 body {
-    background-color: #222;
-    font-family: "Asap";
-    color: whitesmoke;
+    background-color: rgba(33,33,33,1);
+    font-family: "Roboto";
+    color: #bfbfbf;
 }
 
 img, object {
@@ -27,13 +28,18 @@ img, object {
 
 .accordion {
     --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+    --bs-accordion-active: var(--bs-primary-bg-subtle);
+
 }
+
 .accordion-button:not(.collapsed) {
     background-color: var(--color-accordion) !important;
 }
+
 .accordion-item {
     border: none;
     border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 [data-bs-theme=dark] .accordion-button::after {
@@ -49,18 +55,12 @@ img, object {
     left: -6rem;
 }
 
-
 .nice {
     background-image: url('../img/ph_background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.list ul {
-    list-style: none;    
-}
-
-.list ul li:nth-child(2n+1) {
-    border-top: solid 1px white;
-    border-bottom: solid 1px white;
+.card {
+    border: none;
 }
