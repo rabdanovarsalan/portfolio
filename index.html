@@ -22,12 +22,22 @@
         <title>Portfolio</title>
     </head>
     <body>
+
         <header>
             <nav class="navbar bg-dark" data-bs-theme="dark">
+                <div class="container" id="top">
+                    <ul class="skip-links">
+                      <li><a href="#hero">Main Heading</a></li>
+                      <li><a href="#hero2">Second Heading</a></li>
+                      <li><a href="#Services">Services</a></li>
+                      <li><a href="#MyProjects">Projects</a></li>
+                      <li><a href="#contactforms">Contact Me</a></li>
+                    </ul>
+                  </div>
                 <div class="container-sm-fluid container-md">
                     <a class="navbar-brand" href="index.html">
                         <picture>
-                            <img class="origin img-fluid" src="img/logo.png" alt="Avatar Picture" width="64" height="64" class="d-inline-block align-text-top" />
+                            <img class="origin img-fluid d-inline-block align-text-top" src="img/logo.png" alt="Avatar Picture" width="64" height="64"/>
                         </picture>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expand="false" aria-label="Toggle navigation">
@@ -36,13 +46,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Item</a>
+                                <a class="nav-link" href="#hero">Main Heading</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Item</a>
+                                <a class="nav-link" href="#hero2">Second Heading</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Item</a>
+                                <a class="nav-link" href="#Services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#MyProjects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactforms">Contact Me</a>
                             </li>
                         </ul>
                     </div>
@@ -54,15 +70,14 @@
 
         <main>
             <!-- Hero Image Section -->
-            <section class="nice container-fluid py-5 px-4 px-md-5" role="banner">
+            <section class="nice container-fluid py-5 px-4 px-md-5" id="hero" role="banner">
                 <div class="container" data-aos="fade-up" data-aos-duration="1300">
                     <h1 class="text-center pb-5 display-1 fw-light">
                         Arsalan Rabdanov
                     </h1>
                     <div class="row row-cols-1 row-cols-md-2 justify-content-md-between">
                         <p class="pe-md-4 col-md-4 pt-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque
-                            sit amet egestas elit.
+                            Welcome to my portfolio website! My name is Arsalan Rabdanov, and I'm an Algonquin College student. I am studying the Interactive Media Design program and passionate about becoming a Web Developer.
                         </p>
 
                         <p class="ps-md-4 text-md-end col-md-4 pt-5">
@@ -73,7 +88,7 @@
                 </div>
             </section>
 
-            <section class="nice container-fluid bg-primary py-5 px-4 px-md-5" role="banner">
+            <section class="nice container-fluid bg-primary py-5 px-4 px-md-5" id="hero2" role="banner">
                 <div class="container" data-aos="fade-up" data-aos-duration="1300">
                     <div class="row justify-content-md-between">
                         <div class="col-md-8 pe-md-4 align-self-center">
@@ -92,7 +107,7 @@
             </section>
 
             <!-- Services Section -->
-            <section class="list container-fluid bg-dark py-5 px-4 px-md-5">
+            <section class="list container-fluid bg-dark py-5 px-4 px-md-5" id="Services">
                 <div class="container" data-aos="fade-up" data-aos-duration="1300">
                     <div class="row justify-content-md-around">
                         <h2 class="col-md-6 display-1 fw-light text-center text-md-start align-self-center pe-md-4">What I <span class="text-primary">Do</span></h2>
@@ -101,36 +116,36 @@
                                 <div class="accordion-item rounded-0 bg-dark">
                                     <h3 class="accordion-header">
                                         <button class="accordion-button collapsed border-0 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            The Stuff!
+                                            Web Development
                                         </button>
                                     </h3>
                                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#stuff_i_do">
                                         <div class="accordion-body">
-                                            <p>I like to rhyme and commit crime.</p>
+                                            <p>I utilize markup languages such as HTML and CSS, as well as Java Script to create beautiful and well-functioning websites.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item rounded-0 bg-dark">
                                     <h3 class="accordion-header">
                                         <button class="accordion-button collapsed border-0 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
-                                            The Stuff!
+                                            Digital Imaging
                                         </button>
                                     </h3>
                                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#stuff_i_do">
                                         <div class="accordion-body">
-                                            <p>I like to rhyme and commit crime.</p>
+                                            <p>I am proficient at using Adobe Illustrator to create vector graphics.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item rounded-0 bg-dark">
                                     <h3 class="accordion-header">
                                         <button class="accordion-button collapsed border-0 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
-                                            The Stuff!
+                                            Content Management Systems
                                         </button>
                                     </h3>
                                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#stuff_i_do">
                                         <div class="accordion-body">
-                                            <p>I like to rhyme and commit crime.</p>
+                                            <p>I am capable of handling popular Content Management Systems such as Wordpress, Shopify and Drupal.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -231,11 +246,11 @@
                 <!-- End of Project 4 Modal -->
                 <!-- Modals End -->
 
-                <div class="container" data-aos="fade-up" data-aos-duration="1300">
+                <div class="container" data-aos="fade-up" data-aos-duration="1300" id="MyProjects">
                     <h2 class="display-3 text-primary fw-light pb-3 text-center text-md-start">Projects</h2>
                     <div class="row gap-4">
                         <!-- Project 1 -->
-                        <div class="card col-lg bg-transparent d-md-none">
+                        <div class="card col-lg bg-transparent d-md-none" data-aos="fade-up" data-aos-duration="1300">
                             <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
                                 <h3 class="card-title text-start" itemprop="name">Hello World</h3>
                                 <p itemprop="abstract" class="card-text">
@@ -253,7 +268,7 @@
                         <!--End of Project 1 -->
 
                         <!-- Project 2 -->
-                        <div class="card col-lg bg-transparent d-md-none">
+                        <div class="card col-lg bg-transparent d-md-none" data-aos="fade-up" data-aos-duration="1300">
                             <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
                                 <h3 class="card-title text-start" itemprop="name">Project 2</h3>
                                 <p itemprop="abstract" class="card-text">
@@ -271,7 +286,7 @@
                         <!--End of Project 2 -->
 
                         <!-- Project 3 -->
-                        <div class="card col-lg bg-transparent d-md-none">
+                        <div class="card col-lg bg-transparent d-md-none" data-aos="fade-up" data-aos-duration="1300">
                             <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
                                 <h3 class="card-title text-start" itemprop="name">Project 3</h3>
                                 <p itemprop="abstract" class="card-text">
@@ -289,9 +304,9 @@
                         <!--End of Project 3 -->
 
                         <!-- Project 4 -->
-                        <div class="card col-lg bg-transparent d-md-none">
+                        <div class="card col-lg bg-transparent d-md-none" data-aos="fade-up" data-aos-duration="1300">
                             <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
-                                <h3 class="card-title text-start" itemprop="name">Hello World</h3>
+                                <h3 class="card-title text-start" itemprop="name">Project 4</h3>
                                 <p itemprop="abstract" class="card-text">
                                     Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.
                                 </p>
@@ -356,7 +371,7 @@
                                         <!-- Project 3 -->
                                             <div class="card col bg-transparent">
                                                 <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
-                                                    <h3 class="card-title text-start" itemprop="name">Title</h3>
+                                                    <h3 class="card-title text-start" itemprop="name">Project 3</h3>
                                                     <p itemprop="abstract" class="card-text">
                                                         Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.
                                                     </p>
@@ -374,7 +389,7 @@
                                         <!-- Project 4 -->
                                             <div class="card col bg-transparent">
                                                 <div class="card-body d-flex flex-column justify-content-between" itemscope itemtype="https://schema.org/CreativeWork">
-                                                    <h3 class="card-title text-start" itemprop="name">Title</h3>
+                                                    <h3 class="card-title text-start" itemprop="name">Project 4</h3>
                                                     <p itemprop="abstract" class="card-text">
                                                         Aliquam sed euismod sapien. Aenean nec commodo orci. In ultrices eleifend sem, id accumsan massa tempus non. Integer scelerisque aliquet eleifend. Quisque sit amet egestas elit.
                                                     </p>
@@ -406,10 +421,69 @@
                     <!--End of Row-->
                 </div>
             </section>
+
+            <section class="container-fluid bg-dark py-md-5 px-4 px-md-5"  id="contactforms">
+                <div class="container" data-aos="fade-up" data-aos-duration="1300">
+                    <div class="row justify-content-md-between">
+                        <h2 class="col-md-5 text-center pt-5 pt-md-0 display-1 fw-light align-self-center">
+                            Contact Me
+                        </h2>
+                        <form class="col-md-7">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-0" id="yourname" placeholder="Username">
+                                <label for="yourname"><span class="text-primary fw-bold">Your Name</span></label>
+                              </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-0" id="youremail" placeholder="Email">
+                                <label for="youremail"><span class="text-primary fw-bold">Your Email</span></label>
+                              </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control rounded-0" placeholder="Leave a comment here" id="yourmessage" style="height: 100px"></textarea>
+                                <label for="yourmessage"><span class="text-primary fw-bold">Your Message</span></label>
+                              </div>
+
+                            <div class="row-md justify-content-md-between px-2 d-md-none">
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input  rounded-0" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Web Dev</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                      <input type="checkbox" class="form-check-input  rounded-0" id="exampleCheck2">
+                                      <label class="form-check-label" for="exampleCheck2">Digital Imaging</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                      <input type="checkbox" class="form-check-input  rounded-0" id="exampleCheck3">
+                                      <label class="form-check-label" for="exampleCheck3">Content Management Systems</label>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-between px-4 d-none d-md-flex">
+                                <div class="col-4 form-check mb-3">
+                                    <input type="checkbox" class="form-check-input  rounded-0" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Web Development</label>
+                                </div>
+                                <div class="col-4 form-check mb-3">
+                                      <input type="checkbox" class="form-check-input  rounded-0" id="exampleCheck2">
+                                      <label class="form-check-label" for="exampleCheck2">Digital Imaging</label>
+                                </div>
+                                <div class="col-4 form-check mb-3">
+                                      <input type="checkbox" class="form-check-input  rounded-0" id="exampleCheck3">
+                                      <label class="form-check-label" for="exampleCheck3">Content Management Systems</label>
+                                </div>
+                            </div>
+
+
+                            
+                            <button type="submit" class="btn btn-primary d-inline-block rounded-0">Submit</button>
+                          </form>                                            
+                    </div>                
+                </div>
+
+            </section>
         </main>
 
         <footer class="container-fluid bg-dark py-5 px-4 px-md-5">
             <span class="d-flex justify-content-center">&copy; Arsalan Rabdanov 2023.</span>
+            <a class="d-flex justify-content-center" href="#top">Back to Top</a>
         </footer>
 
         <!-- Initialize AOS-->
